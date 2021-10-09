@@ -55,7 +55,6 @@ class AuthController extends Controller
             if (Auth::user()->role_id == User::ROLE_PENGURUS) {
                 return redirect()->route('pengurusDashboard');
             }
-
         } else { // false
 
             //Login Fail

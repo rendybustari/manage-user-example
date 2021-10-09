@@ -18,7 +18,7 @@ use App\Http\Controllers\PengurusController;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return redirect('/login');
 });
 
 Route::get('login', [AuthController::class, 'formLogin'])->name('formLogin');
